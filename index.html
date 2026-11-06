@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pole Position</title>
+<meta name="description" content="Pole Position is an independent project building automated, data-driven trading systems for regulated prediction markets.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#0e0f12; --card:#16181d; --text:#eceef2; --muted:#9aa0ab; --accent:#7ee2a8; --line:#262a31; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font-family:Inter,system-ui,sans-serif; line-height:1.6; }
+  .wrap { max-width:880px; margin:0 auto; padding:0 20px; }
+  header { padding:28px 0; display:flex; justify-content:space-between; align-items:center; }
+  .logo { font-weight:800; font-size:20px; letter-spacing:-.02em; }
+  .logo span { color:var(--accent); }
+  nav a { color:var(--muted); text-decoration:none; margin-left:20px; font-size:14px; }
+  nav a:hover { color:var(--text); }
+  .hero { padding:80px 0 64px; }
+  .hero h1 { font-size:clamp(34px,6vw,56px); line-height:1.08; letter-spacing:-.03em; font-weight:800; }
+  .hero h1 em { font-style:normal; color:var(--accent); }
+  .hero p { color:var(--muted); font-size:18px; max-width:600px; margin-top:20px; }
+  h2 { font-size:13px; text-transform:uppercase; letter-spacing:.12em; color:var(--accent); margin-bottom:20px; }
+  section { padding:48px 0; border-top:1px solid var(--line); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:22px; }
+  .card h3 { font-size:17px; margin-bottom:8px; }
+  .card p { color:var(--muted); font-size:15px; }
+  .about p { color:var(--muted); max-width:640px; margin-bottom:12px; }
+  footer { padding:40px 0; border-top:1px solid var(--line); color:var(--muted); font-size:13px; }
+  footer a { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">🏁 Pole <span>Position</span></div>
+    <nav><a href="#what">What we do</a><a href="#how">How</a></nav>
+  </header>
+
+  <div class="hero">
+    <h1>Systematic trading for <em>prediction markets</em>.</h1>
+    <p>Pole Position is an independent project building automated, data-driven trading systems for regulated event-contract exchanges, finding high-probability opportunities and executing them with strict risk controls.</p>
+  </div>
+
+  <section id="what">
+    <h2>What we do</h2>
+    <div class="grid">
+      <div class="card"><h3>Live data pipelines</h3><p>Real-time market, sports and economic data feeds, recorded and stored for research and backtesting.</p></div>
+      <div class="card"><h3>Strategy research</h3><p>Every idea is tested against historical data and independently verified before it trades. Most don't make the cut.</p></div>
+      <div class="card"><h3>Automated execution</h3><p>Always-on trading engines with position limits, sizing rules and paper-trading stages before any capital is at risk.</p></div>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2>How it works</h2>
+    <div class="grid">
+      <div class="card"><h3>1 · Research</h3><p>AI-assisted agents explore market data and propose candidate edges.</p></div>
+      <div class="card"><h3>2 · Verify</h3><p>Separate checks reproduce results and stress-test them for fill realism and hidden risk.</p></div>
+      <div class="card"><h3>3 · Paper → live</h3><p>Strategies run on paper against live prices, then graduate to small real sizes only after proving out.</p></div>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About</h2>
+    <p>Pole Position is an early-stage project run by a two-person founding team. We're building the infrastructure to research and run prediction-market strategies reliably, around the clock.</p>
+  </section>
+
+  <footer>© 2026 Pole Position. An independent project, not affiliated with or endorsed by any exchange. Not investment advice. We do not manage outside money.</footer>
+</div>
+</body>
+</html>
